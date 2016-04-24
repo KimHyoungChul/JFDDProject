@@ -86,25 +86,7 @@ public class UserFirstLogin extends FragmentActivity implements OnClickListener 
 //			launchEchoCancellerCalibration(sendEcCalibrationResult);
 //		}
 	}
-//	private void launchEchoCancellerCalibration(boolean sendEcCalibrationResult) {
-//		boolean needsEchoCalibration = LinphoneManager.getLc().needsEchoCalibration();
-//		if (needsEchoCalibration && mPrefs.isFirstLaunch()) {
-//			mPrefs.setAccountEnabled(mPrefs.getAccountCount() - 1, false); //We'll enable it after the echo calibration
-//			EchoCancellerCalibrationFragment fragment = new EchoCancellerCalibrationFragment();
-//			fragment.enableEcCalibrationResultSending(sendEcCalibrationResult);
-//			changeFragment(fragment);
-//			currentFragment = SetupFragmentsEnum.ECHO_CANCELLER_CALIBRATION;
-//			back.setVisibility(View.VISIBLE);
-//			next.setVisibility(View.GONE);
-//			next.setEnabled(false);
-//			cancel.setEnabled(false);
-//		} else {
-//			if (mPrefs.isFirstLaunch()) {
-//				mPrefs.setEchoCancellation(LinphoneManager.getLc().needsEchoCanceler());
-//			}
-//			success();
-//		}		
-//	}
+
 	public void saveCreatedAccount(String username, String password, String domain) {
 		if (accountCreated)
 			return;
