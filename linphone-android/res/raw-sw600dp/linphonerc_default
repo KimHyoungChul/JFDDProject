@@ -1,0 +1,20 @@
+[net]
+download_bw=512
+upload_bw=512
+
+[sip]
+contact="JiFengDiaoDu" <sip:JiFengDiaoDu@unknown-host>
+use_info=0
+use_ipv6=0
+keepalive_period=30000
+
+[video]
+size=vga
+
+[app]
+sharing_server=
+tunnel=disabled
+
+[tunnel]
+host=
+port=443

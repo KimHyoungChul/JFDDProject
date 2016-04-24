@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/cell_background"
+    >
+
+       <ImageView
+            android:layout_width="0dp"
+            android:layout_height="45dip"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:src="@drawable/photo_image" />     
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="45dip"
+        android:layout_weight="5"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/list_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/list_user_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textSize="16sp" />
+    </LinearLayout>
+    
+           <ImageView
+            android:id="@+id/list_phone_dialer"
+            android:layout_width="0dp"
+            android:layout_height="45dip"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:src="@drawable/dialr_phone" />
+
+</LinearLayout>

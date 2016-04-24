@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+           <FrameLayout
+            android:id="@+id/tab_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="#77557799"
+            />
+        
+        	   <RelativeLayout
+	                android:id="@+id/layout_bottom"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content" >
+	
+	                <RadioGroup
+	                    android:id="@+id/radiogroup"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="bottom"
+	                    android:background="@drawable/bottombg"
+	                    android:gravity="center_vertical"
+	                    android:orientation="horizontal" >
+	
+	                    <RadioButton
+	                        android:id="@+id/radio_single"
+	                        android:layout_height="@dimen/button_normal_height"
+	                        android:layout_width="wrap_content"
+	                        android:background="@drawable/tab_selector_list"
+	                        android:button="@null"
+	                        android:layout_weight="1"
+	                        android:checked="true" />
+	
+	                    <RadioButton
+	                        android:id="@+id/radio_group"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="@dimen/button_normal_height"
+	                        android:background="@drawable/tab_selector_map"
+	                        android:layout_weight="1"
+	                        android:button="@null" />
+	                    <RadioButton
+	                        android:id="@+id/radio_user"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="@dimen/button_normal_height"
+	                        android:background="@drawable/tab_selector_about"
+	                        android:layout_weight="1"
+	                        android:button="@null" />
+                </RadioGroup>
+                
+
+            </RelativeLayout>
+            
+        	    
+
+        </LinearLayout>
+
+
+</RelativeLayout>
+
+

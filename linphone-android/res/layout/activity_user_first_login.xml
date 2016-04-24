@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/px70"
+            android:paddingLeft="@dimen/px20"
+            android:paddingRight="@dimen/px20" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20"
+                android:text="@string/setup_title"
+                android:paddingTop="15dp"
+	            android:textSize="36sp"
+	            android:textStyle="bold"
+	            android:gravity="center"
+                android:textColor="@color/new_text_default"/> 
+
+            <EditText
+                android:id="@+id/setup_username"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginTop="@dimen/px10"
+                android:background="@drawable/style_radius_top"
+                android:drawablePadding="@dimen/px30"
+                android:gravity="center_vertical"
+                android:hint="@string/setup_username_hint"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/new_text_default"
+                android:textColorHint="@color/new_text_default"
+                android:textSize="@dimen/text_size_largelargemore" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/transparent" />
+
+            <EditText
+                android:id="@+id/setup_password"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:background="@drawable/style_radius_none"
+                android:gravity="center_vertical"
+                android:hint="@string/setup_password_hint"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/new_text_default"
+                android:textColorHint="@color/new_text_default"
+                android:textSize="@dimen/text_size_largelargemore" />
+            
+              <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/transparent" />
+
+            <EditText
+                android:id="@+id/setup_domain"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:background="@drawable/style_radius_bottom"
+                android:gravity="center_vertical"
+                android:hint="@string/setup_domain_hint"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/new_text_default"
+                android:textColorHint="@color/new_text_default"
+                android:textSize="@dimen/text_size_largelargemore" />
+
+            <Button
+                android:id="@+id/setup_apply"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px20"
+                android:background="#98e0ff"
+                android:gravity="center"
+                android:padding="@dimen/px10"
+                android:text="@string/setup_apply"
+                android:textColor="#1F7FC9"
+                android:textSize="@dimen/text_size_largelargemore" />
+        </LinearLayout>
+</LinearLayout>

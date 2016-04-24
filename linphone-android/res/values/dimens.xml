@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="button_normal_height">45dp</dimen>
+  
+    <dimen name="px1">1dp</dimen>
+    <dimen name="px2">2dp</dimen>
+    <dimen name="px5">5dp</dimen>
+    <dimen name="px8">8dp</dimen>
+    <dimen name="px10">10dp</dimen>
+    <dimen name="px12">12dp</dimen>
+    <dimen name="px15">15dp</dimen>
+    <dimen name="px18">18dp</dimen>
+    <dimen name="px20">20dp</dimen>
+    <dimen name="px25">25dp</dimen>
+    <dimen name="px30">30dp</dimen>
+    <dimen name="px35">35dp</dimen>
+    <dimen name="px40">40dp</dimen>
+    <dimen name="px50">50dp</dimen>
+    <dimen name="px53">53dp</dimen>
+    <dimen name="px55">55dp</dimen>
+    <dimen name="px60">60dp</dimen>
+    <dimen name="px65">65dp</dimen>
+    <dimen name="px70">70dp</dimen>
+    <dimen name="px75">75dp</dimen>
+    <dimen name="px80">80dp</dimen>
+    <dimen name="px85">85dp</dimen>
+    <dimen name="px90">90dp</dimen>
+    <dimen name="px100">100dp</dimen>
+    <dimen name="px110">110dp</dimen>
+    <dimen name="px150">150dp</dimen>
+    <dimen name="px200">200dp</dimen>
+    <dimen name="px220">220dp</dimen>
+    <dimen name="px230">230dp</dimen>
+    <dimen name="px240">240dp</dimen>
+    <dimen name="px250">250dp</dimen>
+    <dimen name="px270">270dp</dimen>
+    <dimen name="px300">300dp</dimen>
+    <dimen name="px330">330dp</dimen>
+    <dimen name="px350">350dp</dimen>
+    <dimen name="px370">370dp</dimen>
+    <dimen name="px400">400dp</dimen>
+    <dimen name="px440">440dp</dimen>
+    <dimen name="px450">450dp</dimen>
+    <dimen name="px500">500dp</dimen>
+    <dimen name="px600">600dp</dimen>
+    <dimen name="layer_width">200dp</dimen>
+    <dimen name="layer_height">300dp</dimen>
+    <dimen name="silice_width">200dp</dimen>
+    <dimen name="silice_height">450dp</dimen>
+
+    <!-- 字体尺寸 -->
+    <dimen name="text_size_largemax">24sp</dimen>
+    <dimen name="text_size_largelargemore">20sp</dimen>
+    <dimen name="text_size_largelarge">18sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_mediumx">14sp</dimen>
+    <dimen name="text_size_medium">12sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_size_smalls">8sp</dimen>  
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="history_date_format">d MMM</string>
+	<string name="history_detail_date_format">EEEE MMM d HH:mm</string>
+	<string name="messages_date_format">HH:mm d MMM</string>
+	<string name="today_date_format">HH:mm</string>
+	<string name="picture_name_format">linphone-mms-%s.jpg</string>
+
+	<string name="app_name">极蜂调度</string>
+	<string name="service_name">极蜂调度</string>
+	<string name="addressbook_label">Linphone</string>
+	<string name="sync_account_type">org.linphone</string>
+	<string name="sync_account_name">linphone contacts</string>
+	<string name="sync_mimetype">vnd.android.cursor.item/org.linphone.profile</string>
+	<string name="notification_title">极蜂调度</string>
+	<string name="wait_dialog_text">Starting up</string>
+	<string name="notification_registered">已登陆至%s </string>
+	<string name="notification_register_failure">登陆服务器%s失败</string>
+	<string name="about_text">\@copyright 南京品淳通信科技有限公司</string>
+	<string name="about_link"> </string>
+
+	<string name="setup_welcome">This assistant will help you to use a SIP account for your calls.</string>
+	<string name="setup_create_account">在 linphone.org 上创建一个账户</string>
+	<string name="setup_login_linphone">我已经有一个 linphone.org 账户</string>
+	<string name="setup_login_generic">我已经有一个SIP账号</string>
+	<string name="setup_account_hint">用户登陆</string>	
+	<string name="setup_username_hint">用户名</string>
+
+    <string name="tunnel_host"></string>
+</resources>
+ 
