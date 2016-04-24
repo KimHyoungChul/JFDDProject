@@ -173,22 +173,8 @@ public class UserFirstLogin extends FragmentActivity implements OnClickListener 
 
 	public void isAccountVerified() {
 		Toast.makeText(this, getString(R.string.setup_account_validated), Toast.LENGTH_LONG).show();
-//		launchEchoCancellerCalibration(true);
 	}
-//	private void launchEchoCancellerCalibration(boolean sendEcCalibrationResult) {
-//		boolean needsEchoCalibration = LinphoneManager.getLc().needsEchoCalibration();
-//		if (needsEchoCalibration && mPrefs.isFirstLaunch()) {
-//			mPrefs.setAccountEnabled(mPrefs.getAccountCount() - 1, false); //We'll enable it after the echo calibration
-//			EchoCancellerCalibrationFragment fragment = new EchoCancellerCalibrationFragment();
-//			fragment.enableEcCalibrationResultSending(sendEcCalibrationResult);
-//
-//		} else {
-//			if (mPrefs.isFirstLaunch()) {
-//				mPrefs.setEchoCancellation(LinphoneManager.getLc().needsEchoCanceler());
-//			}
-//			success();
-//		}		
-//	}
+
 	public void isEchoCalibrationFinished() {
 		mPrefs.setAccountEnabled(mPrefs.getAccountCount() - 1, true);
 		success();
