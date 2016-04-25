@@ -20,9 +20,15 @@ package org.linphone;
 
 import static android.content.Intent.ACTION_MAIN;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+import org.linphone.jifeng.service.GetPostUtil;
 import org.linphone.mediastream.Log;
 import org.linphone.setup.RemoteProvisioningActivity;
 import org.linphone.tutorials.TutorialLauncherActivity;
+
 import android.R.string;
 import android.app.Activity;
 import android.content.Context;
@@ -32,6 +38,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
 
 /**
  * 
@@ -61,7 +68,16 @@ public class LinphoneLauncherActivity extends Activity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		setContentView(R.layout.launcher);
 		
-        
+		final Handler h = new Handler(){  
+            @Override  
+            public void handleMessage(Message msg) {  
+                if(msg.what==0x123){  
+                    Log.d("result",msg.obj.toString()); 
+                }  
+            }  
+        };  
+		 new Thread(new AccessNetwork("GET", "http://120.26.42.182:26000/location/upload", "userName=1016&latitude=108.52222&longitude=29.42222", h)).start(); 
+		
 		mHandler = new Handler();
 		
 		if (LinphoneService.isReady()) {
@@ -122,6 +138,57 @@ public class LinphoneLauncherActivity extends Activity {
 			mThread = null;
 		}
 	}
+	
+//	private void sendLocationInfoToServer(){
+//		/*URL可以随意改*/
+//		String uriAPI = "http://120.26.42.182:26000/location/upload?userName=1018&latitude=108.52222&longitude=29.42222";
+//
+//		 HttpGet httpRequest = new HttpGet(uriAPI);
+//
+//			 try {
+//				HttpResponse httpResponse = new DefaultHttpClient()
+//						.execute(httpRequest);
+//				if (httpResponse.getStatusLine().getStatusCode() == 200) {
+//					String strResult = EntityUtils.toString(httpResponse
+//							.getEntity());
+//					Log.d("result",strResult);
+//
+//				}
+//			} catch (Exception e) {
+//				Log.d("result",e.toString());
+//			}
+//	}
+	class AccessNetwork implements Runnable{  
+	    private String op ;  
+	    private String url;  
+	    private String params;  
+	    private Handler h;  
+	      
+	    public AccessNetwork(String op, String url, String params,Handler h) {  
+	        super();  
+	        this.op = op;  
+	        this.url = url;  
+	        this.params = params;  
+	        this.h = h;  
+	    }  
+	  
+	    @Override  
+	    public void run() {  
+	        Message m = new Message();  
+	        m.what = 0x123;  
+	        if(op.equals("GET")){  
+	            Log.i("iiiiiii","发送GET请求");  
+	            m.obj = GetPostUtil.sendGet(url, params);  
+	            Log.i("iiiiiii",">>>>>>>>>>>>"+m.obj);  
+	        }  
+	        if(op.equals("POST")){  
+	            Log.i("iiiiiii","发送POST请求");  
+	            m.obj = GetPostUtil.sendPost(url, params);  
+	            Log.i("gggggggg",">>>>>>>>>>>>"+m.obj);  
+	        }  
+	        h.sendMessage(m);  
+	    }  
+	}  
 	
 	
 	
